@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<HBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="573.0" prefWidth="968.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="anylyzer.controllers.AnswerCardController">
+   <children>
+      <VBox prefHeight="573.0" prefWidth="475.0">
+         <children>
+            <HBox alignment="CENTER" prefHeight="39.0" prefWidth="465.0">
+               <children>
+                  <Label text="New answer card">
+                     <font>
+                        <Font size="25.0" />
+                     </font></Label>
+               </children>
+            </HBox>
+            <VBox prefHeight="77.0" prefWidth="475.0">
+               <children>
+                  <Label prefHeight="21.0" prefWidth="217.0" text="student index" />
+                  <TextField fx:id="textFieldStudentIndex" />
+               </children>
+            </VBox>
+            <VBox prefHeight="85.0" prefWidth="475.0">
+               <children>
+                  <Label text="questions" />
+                  <ComboBox fx:id="questions" prefHeight="31.0" prefWidth="477.0" />
+               </children>
+            </VBox>
+            <VBox prefHeight="79.0" prefWidth="475.0">
+               <children>
+                  <Label prefHeight="21.0" prefWidth="72.0" text="answers" />
+                  <ComboBox fx:id="choiceBoxAnswers" prefHeight="31.0" prefWidth="528.0" />
+               </children>
+            </VBox>
+            <VBox prefHeight="80.0" prefWidth="475.0">
+               <children>
+                  <Label text="choose answer symbol" />
+                  <ComboBox fx:id="choiceBoxCorrectAnswer" prefHeight="31.0" prefWidth="485.0" />
+               </children>
+            </VBox>
+            <Region prefHeight="59.0" prefWidth="474.0" />
+            <HBox alignment="CENTER" prefHeight="72.0" prefWidth="474.0">
+               <children>
+                  <Button mnemonicParsing="false" onAction="#buttonAddAnswer_onAction" text="add answer" />
+               </children>
+            </HBox>
+            <Region prefHeight="59.0" prefWidth="474.0" />
+            <TableView fx:id="tableViewAnswersOnCurrentQuestion" prefHeight="316.0" prefWidth="475.0">
+              <columns>
+                <TableColumn fx:id="tableColumnQuestionNumber" prefWidth="224.0" text="question number" />
+                <TableColumn fx:id="tableColumnAnswer" prefWidth="250.0" text="answer" />
+              </columns>
+            </TableView>
+            <HBox alignment="CENTER" prefHeight="83.0" prefWidth="475.0">
+               <children>
+                  <Button mnemonicParsing="false" onAction="#buttonDeleteAddedAnswer_onAction" prefHeight="31.0" prefWidth="204.0" text="delete added answer" />
+                  <Region prefHeight="37.0" prefWidth="49.0" />
+                  <Button mnemonicParsing="false" onAction="#buttonAddAnswerCard_onAction" text="add answer card" />
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+      <VBox prefHeight="573.0" prefWidth="495.0">
+         <children>
+            <VBox alignment="CENTER" prefHeight="302.0" prefWidth="494.0">
+               <children>
+                  <Label text="Answers" />
+                  <TableView fx:id="tableViewStudentAnswers" prefHeight="216.0" prefWidth="494.0">
+                    <columns>
+                      <TableColumn fx:id="tableColumnIndex" prefWidth="258.0" text="student index" />
+                    </columns>
+                  </TableView>
+                  <Button mnemonicParsing="false" onAction="#buttonDeleteCheckedAnswerCard_onAction" text="delete marked answer card" />
+                  <Label alignment="CENTER" prefHeight="21.0" prefWidth="492.0" text="answers on checked answers card" />
+               </children>
+            </VBox>
+            <VBox prefHeight="245.0" prefWidth="494.0">
+               <children>
+                  <TableView fx:id="tableViewDetailsStudentAnswers" prefHeight="243.0" prefWidth="494.0">
+                    <columns>
+                      <TableColumn fx:id="tableColumnQuestionNumber2"  prefWidth="304.0" text="question number" />
+                      <TableColumn fx:id="tableColumnAnswer2"  prefWidth="189.0" text="answer" />
+                    </columns>
+                  </TableView>
+               </children>
+            </VBox>
+            <HBox alignment="CENTER" prefHeight="39.0" prefWidth="494.0">
+               <children>
+                  <Button contentDisplay="CENTER" mnemonicParsing="false" onAction="#buttonAddAnswerCardSet_onAction" text="add answer card set" />
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+   </children>
+</HBox>

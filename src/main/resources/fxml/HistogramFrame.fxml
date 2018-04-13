@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.chart.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="883.0" prefWidth="1147.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="anylyzer.controllers.HistogramController">
+   <children>
+      <BarChart fx:id="pointsChart" layoutX="51.0" layoutY="4.0" prefHeight="273.0" prefWidth="1029.0">
+        <xAxis>
+          <CategoryAxis side="BOTTOM" fx:id="xAxisPointChart" />
+        </xAxis>
+        <yAxis>
+          <NumberAxis fx:id="yAxisPointChart" side="LEFT" />
+        </yAxis>
+      </BarChart>
+      <BarChart fx:id="marksChart" layoutX="48.0" layoutY="267.0" prefHeight="290.0" prefWidth="1029.0">
+        <xAxis>
+          <CategoryAxis side="BOTTOM" fx:id="xAxisMarksChart" />
+        </xAxis>
+        <yAxis>
+          <NumberAxis fx:id="yAxisMarksChart" side="LEFT" />
+        </yAxis>
+      </BarChart>
+      <BarChart fx:id="averageAnswerChart" layoutX="48.0" layoutY="566.0" prefHeight="290.0" prefWidth="1029.0">
+        <xAxis>
+          <CategoryAxis side="BOTTOM" fx:id="xAxisAverageAnswerChart" />
+        </xAxis>
+        <yAxis>
+          <NumberAxis fx:id="yAxisAverageAnswerChart" side="LEFT" />
+        </yAxis>
+      </BarChart>
+   </children>
+</AnchorPane>

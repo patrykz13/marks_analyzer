@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<test numberOfQuestions="1" testName="213">
+    <questions>
+        <question questionContent="Ile ryba ma osci" number="1">
+            <answers>
+                <answer symbol="65" content="1" correct="true"/>
+                <answer symbol="66" content="1" correct="false"/>
+                <answer symbol="67" content="1" correct="false"/>
+                <answer symbol="68" content="1" correct="false"/>
+            </answers>
+            <correctAnswer symbol="65" content="1" correct="true"/>
+        </question>
+    </questions>
+</test>

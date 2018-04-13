@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<?import javafx.scene.control.cell.PropertyValueFactory?>
+<HBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="499.0" prefWidth="831.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="anylyzer.controllers.MainFrameController">
+   <children>
+      <VBox prefHeight="400.0" prefWidth="409.0">
+         <children>
+            <HBox alignment="CENTER" prefHeight="41.0" prefWidth="351.0">
+               <children>
+                  <Label contentDisplay="CENTER" text="Test creation zone" />
+               </children>
+            </HBox>
+            <HBox prefHeight="35.0" prefWidth="351.0">
+               <children>
+                  <Button alignment="CENTER" contentDisplay="BOTTOM" mnemonicParsing="false" onAction="#buttonChooseXMLFile_onAction" prefHeight="31.0" prefWidth="163.0" text="choose XML File" />
+                  <Region prefHeight="30.0" prefWidth="24.0" />
+                  <Button contentDisplay="CENTER" mnemonicParsing="false" onAction="#buttonCreateTest_onAction" prefHeight="31.0" prefWidth="178.0" text="create new Test" />
+               </children>
+            </HBox>
+            <HBox prefHeight="389.0" prefWidth="351.0">
+               <children>
+                  <TableView prefHeight="389.0" prefWidth="369.0" fx:id="xmlTable">
+                    <columns>
+                      <TableColumn fx:id="tableColumTestXML" prefWidth="137.0" text="test" />
+                        <TableColumn fx:id="tableColumnQuestionsXML" prefWidth="177.0" text="number of questions" />
+                    </columns>
+
+
+                  </TableView>
+               </children>
+            </HBox>
+            <HBox prefHeight="35.0" prefWidth="351.0">
+               <children>
+                  <Region prefHeight="30.0" prefWidth="24.0" />
+                  <Button alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" prefHeight="31.0" prefWidth="375.0" text="show" />
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+      <VBox alignment="CENTER" prefHeight="499.0" prefWidth="290.0">
+         <children>
+            <Button mnemonicParsing="false" onAction="#buttonShowHistograms_onAction" prefHeight="31.0" prefWidth="164.0" text="show histograms" />
+         </children>
+      </VBox>
+      <VBox prefHeight="400.0" prefWidth="409.0">
+         <children>
+            <HBox alignment="CENTER" prefHeight="41.0" prefWidth="351.0">
+               <children>
+                  <Label contentDisplay="CENTER" text="answer creation zone" />
+               </children>
+            </HBox>
+            <HBox prefHeight="35.0" prefWidth="351.0">
+               <children>
+                  <Button alignment="CENTER" contentDisplay="BOTTOM" mnemonicParsing="false" onAction="#buttonChooseXLSXFile_onAction" prefHeight="31.0" prefWidth="163.0" text="choose xlsx File" />
+                  <Region prefHeight="30.0" prefWidth="24.0" />
+                  <Button contentDisplay="CENTER" mnemonicParsing="false" onAction="#buttonCreateNewResponseCard_onAction" prefHeight="31.0" prefWidth="178.0" text="create answer card" />
+               </children>
+            </HBox>
+            <HBox prefHeight="389.0" prefWidth="351.0">
+               <children>
+                  <TableView prefHeight="389.0" prefWidth="369.0" fx:id="xlsxTable">
+                     <columns>
+                        <TableColumn fx:id="tableColumnXLSX" prefWidth="350.0" text="test" />
+                     </columns>
+                  </TableView>
+               </children>
+            </HBox>
+            <HBox prefHeight="35.0" prefWidth="351.0">
+               <children>
+                  <Region prefHeight="30.0" prefWidth="24.0" />
+                  <Button alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" prefHeight="31.0" prefWidth="375.0" text="show" />
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+   </children>
+</HBox>

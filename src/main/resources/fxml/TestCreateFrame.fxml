@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.collections.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.collections.FXCollections?>
+
+<HBox alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="593.0" prefWidth="422.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="anylyzer.controllers.TestCreateController">
+   <children>
+      <VBox prefHeight="525.0" prefWidth="396.0">
+         <children>
+            <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="21.0" prefWidth="415.0" text="test name" />
+            <VBox prefHeight="100.0" prefWidth="396.0">
+               <children>
+                  <TextField fx:id="textFieldTestName" prefHeight="31.0" prefWidth="320.0" />
+                  <HBox alignment="CENTER" prefHeight="65.0" prefWidth="396.0">
+                     <children>
+                        <Button alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" onAction="#buttoStartCreating_onAction" prefHeight="34.0" prefWidth="149.0" text="Start creating test" />
+                     </children>
+                  </HBox>
+               </children>
+            </VBox>
+            <HBox prefHeight="52.0" prefWidth="396.0">
+               <children>
+                  <Label fx:id="labelQuestion" prefHeight="50.0" prefWidth="200.0" text="Question" visible="false" />
+                  <TextField fx:id="textFieldQuestion" alignment="TOP_LEFT" prefHeight="52.0" prefWidth="332.0" visible="false" />
+               </children>
+            </HBox>
+            <Region prefHeight="18.0" prefWidth="396.0" />
+            <HBox prefHeight="30.0" prefWidth="396.0">
+               <children>
+                  <Label fx:id="labelA" prefHeight="34.0" prefWidth="112.0" text="A. " visible="false" />
+                  <TextField fx:id="textFieldA" prefHeight="31.0" prefWidth="284.0" visible="false" />
+               </children>
+            </HBox>
+            <Region prefHeight="18.0" prefWidth="396.0" />
+            <HBox prefHeight="30.0" prefWidth="396.0">
+               <children>
+                  <Label fx:id="labelB" prefHeight="34.0" prefWidth="112.0" text="B." visible="false" />
+                  <TextField fx:id="textFieldB" prefHeight="31.0" prefWidth="284.0" visible="false" />
+               </children>
+            </HBox>
+            <Region prefHeight="18.0" prefWidth="396.0" />
+            <HBox prefHeight="30.0" prefWidth="396.0">
+               <children>
+                  <Label fx:id="labelC" prefHeight="34.0" prefWidth="112.0" text="C." visible="false" />
+                  <TextField fx:id="textFieldC" prefHeight="31.0" prefWidth="284.0" visible="false" />
+               </children>
+            </HBox>
+            <Region prefHeight="18.0" prefWidth="396.0" />
+            <HBox prefHeight="30.0" prefWidth="396.0">
+               <children>
+                  <Label fx:id="labelD" prefHeight="34.0" prefWidth="112.0" text="D." visible="false" />
+                  <TextField fx:id="textFieldD" prefHeight="31.0" prefWidth="284.0" visible="false" />
+               </children>
+            </HBox>
+            <Region prefHeight="18.0" prefWidth="396.0" />
+            <HBox prefHeight="30.0" prefWidth="396.0">
+               <children>
+                  <Label fx:id="labelCorrectAnswer" prefHeight="34.0" prefWidth="112.0" text="correct answer" visible="false" />
+                  <ChoiceBox fx:id="choiceBoxCorrectAnswer" prefHeight="31.0" prefWidth="283.0" visible="false">
+                     <items>
+                        <FXCollections fx:factory="observableArrayList">
+                           <String fx:value="A" />
+                           <String fx:value="B" />
+                           <String fx:value="C" />
+                           <String fx:value="D" />
+                        </FXCollections>
+                     </items>
+                  </ChoiceBox>
+               </children>
+            </HBox>
+            <Region prefHeight="26.0" prefWidth="396.0" />
+            <Button fx:id="buttonAddQuestion" mnemonicParsing="false" onAction="#buttonAddQuestion_onAction" prefHeight="31.0" prefWidth="412.0" text="add question to the test" visible="false" />
+            <Region prefHeight="115.0" prefWidth="396.0" />
+            <Button fx:id="buttonEnd" mnemonicParsing="false" onAction="#buttonEnd_onAction" prefHeight="10.0" prefWidth="396.0" text="end up creating test" visible="false" />
+         </children>
+      </VBox>
+   </children>
+</HBox>

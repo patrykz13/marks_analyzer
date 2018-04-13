@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<test testName="test" numberOfQuestions="5">
+    <questions>
+        <question questionContent="lolol" number="1">
+            <answers>
+                <answer symbol="65" content="label" correct="true"/>
+                <answer symbol="66" content="label" correct="false"/>
+                <answer symbol="67" content="label" correct="false"/>
+                <answer symbol="68" content="label" correct="false"/>
+            </answers>
+            <correctAnswer symbol="65" content="label" correct="true"/>
+        </question>
+        <question questionContent="no" number="2">
+            <answers>
+                <answer symbol="65" content="no" correct="true"/>
+                <answer symbol="66" content="no" correct="false"/>
+                <answer symbol="67" content="no" correct="false"/>
+                <answer symbol="68" content="no" correct="false"/>
+            </answers>
+            <correctAnswer symbol="65" content="no" correct="true"/>
+        </question>
+        <question questionContent="d" number="3">
+            <answers>
+                <answer symbol="65" content="d" correct="true"/>
+                <answer symbol="66" content="d" correct="false"/>
+                <answer symbol="67" content="d" correct="false"/>
+                <answer symbol="68" content="d" correct="false"/>
+            </answers>
+            <correctAnswer symbol="65" content="d" correct="true"/>
+        </question>
+        <question questionContent="g" number="4">
+            <answers>
+                <answer symbol="65" content="g" correct="true"/>
+                <answer symbol="66" content="g" correct="false"/>
+                <answer symbol="67" content="g" correct="false"/>
+                <answer symbol="68" content="g" correct="false"/>
+            </answers>
+            <correctAnswer symbol="65" content="g" correct="true"/>
+        </question>
+        <question questionContent="m" number="5">
+            <answers>
+                <answer symbol="65" content="m" correct="true"/>
+                <answer symbol="66" content="m" correct="false"/>
+                <answer symbol="67" content="m" correct="false"/>
+                <answer symbol="68" content="m" correct="false"/>
+            </answers>
+            <correctAnswer symbol="65" content="m" correct="true"/>
+        </question>
+    </questions>
+</test>
